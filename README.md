@@ -1,0 +1,1 @@
+# all_static_tools_demo
