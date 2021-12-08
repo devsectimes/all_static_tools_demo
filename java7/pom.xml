@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.devsectimes</groupId>
+    <artifactId>statictoolsdemo</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>java7</artifactId>
+  <name>Java 7</name>
+
+
+    <properties>
+      <maven.compiler.source>7</maven.compiler.source>
+      <maven.compiler.target>7</maven.compiler.target>
+      <github.site.path>${project.artifactId}</github.site.path>
+      <test-plugin.version>2.20</test-plugin.version>
+    </properties>
+
+    <dependencies>
+    <dependency>
+  	<groupId>junit</groupId>
+  	<artifactId>junit</artifactId>
+  	<version>4.12</version>
+  	<scope>test</scope>
+  </dependency>
+</dependencies>
+
+  <!--
+    <url>https://devsectimes.com/staticdemo/${project.artifactId}/</url>
+  -->
+      <distributionManagement>
+        <site>
+            <id>github</id>
+             <url>${project.url}</url>
+          </site>
+    </distributionManagement>
+
+
+    <build>
+      <pluginManagement>
+        <plugins>
+
+          <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>${compiler-plugin.version}</version>
+          </plugin>
+
+          <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.22.0</version>
+			<dependencies>
+				<dependency>
+					<groupId>org.apache.maven.surefire</groupId>
+					<artifactId>surefire-junit4</artifactId>
+					<version>2.22.0</version>
+				</dependency>
+			</dependencies>
+			<configuration>
+				<includes>
+					<include>**/*.java</include>
+				</includes>
+			</configuration>
+		</plugin>
+        </plugins>
+      </pluginManagement>
+    </build>
+
+
+</project>
