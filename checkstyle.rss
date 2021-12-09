@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2021</copyright>
     <item>
-      <title>File: 5,
-             Errors: 126,
+      <title>File: 6,
+             Errors: 151,
              Warnings: 0,
              Infos: 0
       </title>
@@ -44,6 +44,20 @@ under the License.
             </tr>
           </thead>
           <tbody>
+                          <tr>
+                <td>
+                  <a href="https://devsectimes.com/simple_static_tools_demo//checkstyle.html#com.devsectimes.staticdemo.java15.HelloStaticWorld.java">com/devsectimes/staticdemo/java15/HelloStaticWorld.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
                           <tr>
                 <td>
                   <a href="https://devsectimes.com/simple_static_tools_demo//checkstyle.html#com.devsectimes.staticdemo.java16.HelloStaticWorld.java">com/devsectimes/staticdemo/java16/HelloStaticWorld.java</a>
