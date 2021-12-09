@@ -1,4 +1,4 @@
-package com.devsectimes.staticdemo;
+package com.devsectimes.staticdemo.java8;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;

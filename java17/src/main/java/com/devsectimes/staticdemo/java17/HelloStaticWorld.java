@@ -1,4 +1,4 @@
-package com.devsectimes.staticdemo;
+package com.devsectimes.staticdemo.java17;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ public class HelloStaticWorld {
 
   public static void main(String[] args ) {
 
-      System.out.println("Hello Static World (Java 16 style)");
+      System.out.println("Hello Static World (Java 17 style)");
       HelloStaticWorld h=new HelloStaticWorld();
       System.out.println("Total ="+h.add(args));
 

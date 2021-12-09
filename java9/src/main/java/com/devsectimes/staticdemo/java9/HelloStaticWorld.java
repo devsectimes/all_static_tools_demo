@@ -1,4 +1,4 @@
-package com.devsectimes.staticdemo;
+package com.devsectimes.staticdemo.java9;
 
 import java.util.ArrayList;
 import java.util.List;

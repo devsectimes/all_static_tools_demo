@@ -1,4 +1,4 @@
-package com.devsectimes.staticdemo;
+package com.devsectimes.staticdemo.java8;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,13 +8,13 @@ public class HelloStaticWorld {
 
   public static void main(String[] args ) {
 
-      System.out.println("Hello Static World (Java 7 style)");
+      System.out.println("Hello Static World (Java 8 style)");
       HelloStaticWorld h=new HelloStaticWorld();
       System.out.println("Total ="+h.add(args));
 
   }
 
-public int add(String[] args) {
+public int add(String... args) {
 
     List<Integer> arglist = new ArrayList<>();
 
@@ -24,10 +24,10 @@ public int add(String[] args) {
 
     int total=0;
 
-    Iterator i=arglist.iterator();
+    Iterator<Integer> i=arglist.iterator();
 
     while(i.hasNext()) {
-      total+=(Integer)i.next();
+      total+=i.next();
     }
 
     return total;
