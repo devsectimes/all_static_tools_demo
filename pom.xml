@@ -37,6 +37,15 @@
   </distributionManagement>
 
 
+  <dependencies>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.0.0-M5</version>
+        <scope>test</scope>
+    </dependency>
+  </dependencies>
+
   <build>
 
 
@@ -130,7 +139,7 @@
           <version>3.0.0-M5</version>
           <configuration>
          <aggregate>true</aggregate>
-         <title>Hello</title>
+         <title>Combined Unit Tests</title>
        </configuration>
         </plugin>
 
