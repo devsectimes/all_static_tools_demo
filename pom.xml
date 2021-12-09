@@ -11,6 +11,8 @@
     <module>java7</module>
     <module>java8</module>
     <module>java9</module>
+    <module>java14</module>
+    <module>java15</module>
     <module>java16</module>
     <module>java17</module>
   </modules>
@@ -62,6 +64,16 @@
                   <version>9.1</version>
                 </dependency>
               </dependencies>
+              <executions>
+          <execution>
+            <id>validate</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>checkstyle</goal>
+              <goal>checkstyle-aggregate</goal>
+            </goals>
+          </execution>
+        </executions>
             </plugin>
           </plugins>
         </pluginManagement>
@@ -113,7 +125,8 @@
           <version>3.0.0</version>
       </plugin>
 
-    </plugins>
+</plugins>
+
   </build>
 
   <reporting>
@@ -150,11 +163,22 @@
         <reportSets>
           <reportSet>
             <reports>
-              <report>checkstyle</report>
+              <report>checkstyle-aggregate</report>
             </reports>
           </reportSet>
         </reportSets>
 
+      </plugin>
+
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-pmd-plugin</artifactId>
+          <version>3.15.0</version>
+          <configuration>
+          <rulesets>
+            <ruleset>/rulesets/java/maven-pmd-plugin-default.xml</ruleset>
+          </rulesets>
+        </configuration>
       </plugin>
     </plugins>
 </reporting>
